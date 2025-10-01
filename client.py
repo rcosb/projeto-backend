@@ -24,9 +24,9 @@ def list_all(args):
             print(f"ID:[{t['id']}]")
             print(f"Título:{t['titulo']}")
             print(f"Status:{t['status']}")
-            print(f"criado em: {t['criado_em']}")
             if t.get('descricao'):
                 print('Descricao:', t['descricao'])
+            print(f"criado em: {t['criado_em']}")
     else:
         print('Erro:', r.status_code, r.text)
 
@@ -38,9 +38,9 @@ def get(args):
         print(f"ID:[{t['id']}]")
         print(f"Título:{t['titulo']}")
         print(f"Status:{t['status']}")
-        print(f"criado em: {t['criado_em']}")
         if t.get('descricao'):
             print('Descricao:', t['descricao'])
+        print(f"criado em: {t['criado_em']}")
     else:
         print('Erro:', r.status_code, r.text)
 
